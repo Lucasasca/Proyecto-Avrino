@@ -235,14 +235,35 @@ footer h3{
 
 /* Sobre Nosatros */
 
-.SectionSobreNosotros{
-    display: flex;
+.SectionSN{
+   margin: 0px 20px 0px 10px;
+    
 }
 
-.textoSN{
-    margin-left: 10px;
-    margin-right: 10px;
+.imgSN{
+    display: flex;
+    justify-content: space-between;
 }
+
+.Sn1{
+    width: 33%;
+    height: 33%;
+    border-radius: 20px;
+}
+
+.Sn2{
+    width: 33%;
+    height: 33%;
+    border-radius: 20px;
+}
+
+.Sn3{
+    width: 33%;
+    height: 33%;
+    border-radius: 20px;
+}
+
+
 
 
   
