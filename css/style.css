@@ -114,7 +114,7 @@ nav a{
 }
 
 .ImgPresentacion{
-    width: 500px;
+    width: 30%;
 }
 
 .Presentacion{
@@ -274,21 +274,48 @@ footer h3{
 /* mediaQ */
 
 @media screen and (max-width:480px) {
-    header{
-        flex-direction: column;
+    h2{
+        font-size: 2rem;
     }
-    nav{
-        width: 90%;
+    h4{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: end;
+        margin-right: 10px;
     }
     nav a{
         font-size: 1.3rem;
     }
     .TituloBanner{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .TextoBanner{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-right: 10px;
     }
+    .SectionPresentacion{
+        flex-direction: column-reverse;
+    }
+    .ImgPresentacion{
+        width: 100%;
+    }
+    footer h3{
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+    .LogoInstagram{
+        width: 20%;
+    }
+    .LogoFacebook{
+        width: 11%;
+    }
+
+   
    
 }
 
