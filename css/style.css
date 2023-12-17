@@ -48,8 +48,10 @@ p{
 header{
     background-color: #99DDCC;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    position: sticky;
 }
 
 header img{
@@ -106,13 +108,18 @@ nav a{
 
 /* section index */
 
-section{
+.SectionPresentacion{
     display: flex;
-    text-align: justify;
+    flex-direction: row-reverse;
 }
 
-section img{
+.ImgPresentacion{
     width: 500px;
+}
+
+.Presentacion{
+    margin: 0 10px 0 10px;
+    text-align: justify;
 }
 
 /* footer */
@@ -237,30 +244,52 @@ footer h3{
 
 .SectionSN{
    margin: 0px 20px 0px 10px;
-    
 }
 
 .imgSN{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    background-color: #FFE2E2;
 }
 
 .Sn1{
-    width: 33%;
-    height: 33%;
+    width: 30%;
+    height: 30%;
     border-radius: 20px;
 }
 
 .Sn2{
-    width: 33%;
-    height: 33%;
+    width: 30%;
+    height: 30%;
     border-radius: 20px;
 }
 
 .Sn3{
-    width: 33%;
-    height: 33%;
+    width: 30%;
+    height: 30%;
     border-radius: 20px;
+}
+
+/* mediaQ */
+
+@media screen and (max-width:480px) {
+    header{
+        flex-direction: column;
+    }
+    nav{
+        width: 90%;
+    }
+    nav a{
+        font-size: 1.3rem;
+    }
+    .TituloBanner{
+        font-size: 4rem;
+    }
+    .TextoBanner{
+        font-size: 1.5rem;
+    }
+   
 }
 
 
