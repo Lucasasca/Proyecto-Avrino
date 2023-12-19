@@ -179,7 +179,7 @@ footer h3{
 
     grid-template-columns: 40% 40%;
 
-    grid-template-rows: 800px 400px 250px 800px 250px;
+    grid-template-rows: 800px 420px 250px 800px 250px;
     
     justify-content: center;
     row-gap: 10px;
@@ -270,6 +270,10 @@ footer h3{
     height: 30%;
     border-radius: 20px;
 }
+
+/* Contacto */
+
+
 
 /* mediaQ celulares */
 
