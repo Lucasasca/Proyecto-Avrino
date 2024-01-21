@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Space Grotesk', sans-serif;
 }
 
 html{
@@ -22,6 +23,7 @@ html{
 
 h1{
     font-size: 7rem;
+    font-weight: bold;
 }
 
 h2{
@@ -224,12 +226,24 @@ footer h3{
 
 /* Experiencias */
 
+.card{
+    margin-top: 30px;
+}
+
+.card-body{
+    font-family:'Space Grotesk', sans-serif;
+}
+
+.card-title{
+    font-size: 2rem;
+}
+
 .card-img-top-left{
     width: 600px;
 }
 
 .card-img-top-right{
-    width: 400px;
+    width: 600px;
 }
 
 .card-img-bottom-left{
@@ -237,13 +251,14 @@ footer h3{
 }
 
 .card-img-bottom-right{
-    width: 484px;
+    width: 600px;
 }
 
 /* Sobre Nosatros */
 
 .SectionSN{
    margin: 0px 20px 0px 10px;
+   text-align: justify;
 }
 
 .imgSN{
@@ -251,27 +266,68 @@ footer h3{
     justify-content: space-evenly;
     margin-top: 20px;
     background-color: #FFE2E2;
+    padding: 2.5vw 0;
 }
 
 .Sn1{
     width: 30%;
     height: 30%;
-    border-radius: 20px;
+    border-radius: 40% 0px;
 }
 
 .Sn2{
     width: 30%;
     height: 30%;
-    border-radius: 20px;
+    border-radius: 40% 0px;
 }
 
 .Sn3{
     width: 30%;
     height: 30%;
-    border-radius: 20px;
+    border-radius: 40% 0px;
 }
 
 /* Contacto */
+
+.mensaje{
+    margin-left: 20px;
+    color: #787878;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px 0px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+form div, form div input, form div label, form div textarea{
+    width: 100%;
+}
+
+label{
+    font-size: 1.5rem;
+    color: #787878;
+}
+
+input{
+    padding: 5px;
+}
+
+.TextoMapa{
+    margin-left: 20px;
+    padding: 20px 0px;
+}
+
+iframe{
+    margin-left: 20px;
+   
+}
+
+
 
 
 
@@ -314,12 +370,12 @@ footer h3{
     }
     .LogoInstagram{
         width: 20%;
-    }
+    } 
     .LogoFacebook{
         width: 11%;
     }
 
-    /* prodectos */
+    /* productos */
 
     .TituloProductos{
         font-size: 3.5rem;
@@ -345,7 +401,36 @@ footer h3{
         text-align: center;
         margin: 10px 10px 10px 10px;
     }
-}
+
+    /* Sobre Nosotros */
+
+    .SectionSN{
+        margin-right: 10px;    
+    }
+
+    /* Contacto */
+
+    .mensaje{
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 0px;
+    }
+
+    form{
+        padding-top: 10px;
+        max-width: 300px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Experiencias */
+
+    .card-img-top-left,.card-img-top-right,.card-img-bottom-left,.card-img-bottom-right{
+        width: 100%;
+    }
 
 
 
