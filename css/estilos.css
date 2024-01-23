@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 62.5%;
+  background-color: #F6F6F6;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #787878;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 3.5rem;
+  color: #787878;
+}
+
+p {
+  font-size: 2.5rem;
+  color: #787878;
+}
+
+header {
+  background-color: #99DDCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+header img {
+  width: 130px;
+  border-radius: 100px;
+  margin: 10px 0px 10px 10px;
+}
+header nav {
+  width: 60%;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  margin-right: 20px;
+}
+header nav ul a {
+  color: #FFE2E2;
+  text-decoration: none;
+  font-size: 3rem;
+  text-shadow: 4px -1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.banner {
+  display: flex;
+  background-color: #BAD7DF;
+}
+
+.TituloBanner {
+  text-align: center;
+  font-size: 10rem;
+  color: #F6F6F6;
+  text-shadow: 4px -1px 5px rgba(0, 0, 0, 0.6);
+  margin-left: 10px;
+}
+
+.TextoBanner {
+  font-size: 3.5rem;
+  color: #F6F6F6;
+  text-shadow: 4px -1px 5px rgba(0, 0, 0, 0.6);
+  text-align: right;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.SectionPresentacion {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.SectionPresentacion .ImgPresentacion {
+  width: 30%;
+}
+.SectionPresentacion .Presentacion {
+  margin: 0 10px 0 10px;
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+footer h3 {
+  color: #787878;
+  text-align: right;
+  margin-right: 20px;
+}
+footer .LogoInstagram {
+  width: 100px;
+  float: right;
+  background-color: #F6F6F6;
+}
+footer .LogoFacebook {
+  width: 55px;
+  float: right;
+  background-color: #F6F6F6;
+}
+
+.TituloProductos {
+  width: 100%;
+  color: #FFE2E2;
+  text-align: center;
+  font-size: 8rem;
+  text-shadow: 4px -1px 10px rgba(0, 0, 0, 0.6);
+  padding-bottom: 50px;
+}
+
+.ContenedorGrid {
+  display: grid;
+  grid-template-areas: "LibroSensorial LibroSensorial" "texto1 CuboSensorial" "AlfombraSensorial CuboSensorial" "AlfombraSensorial texto2" "texto3 texto3";
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 800px 420px 250px 800px 250px;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.ContenedorGrid img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+.ContenedorGrid .LibroSensorial {
+  grid-area: LibroSensorial;
+}
+.ContenedorGrid .texto1 {
+  grid-area: texto1;
+}
+.ContenedorGrid .AlfombraSensorial {
+  grid-area: AlfombraSensorial;
+}
+.ContenedorGrid .CuboSensorial {
+  grid-area: CuboSensorial;
+}
+.ContenedorGrid .texto2 {
+  grid-area: texto2;
+}
+.ContenedorGrid .texto3 {
+  grid-area: texto3;
+}
+
+.ContenedorGrid p {
+  text-align: justify;
+  color: #787878;
+}
+
+.TextoProductos {
+  font-size: 2.5rem;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.card {
+  margin-top: 30px;
+}
+.card .card-body {
+  font-family: "Space Grotesk", sans-serif;
+}
+.card .card-title {
+  font-size: 2rem;
+}
+.card .card-img-top-left,
+.card .card-img-top-right,
+.card .card-img-bottom-left,
+.card .card-img-bottom-right {
+  width: 600px;
+}
+
+.SectionSN {
+  margin: 0px 20px 0px 10px;
+  text-align: justify;
+}
+
+.imgSN {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  background-color: #FFE2E2;
+  padding: 2.5vw 0;
+}
+.imgSN .Sn1,
+.imgSN .Sn2,
+.imgSN .Sn3 {
+  width: 30%;
+  height: 30%;
+  border-radius: 40% 0px;
+}
+
+.mensaje {
+  margin-left: 20px;
+  color: #787878;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 20px 0px;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+form div,
+form div input,
+form div label,
+form div textarea {
+  width: 100%;
+}
+form label {
+  font-size: 1.5rem;
+  color: #787878;
+}
+form input {
+  padding: 5px;
+}
+
+.TextoMapa {
+  margin-left: 20px;
+  padding: 20px 0px;
+}
+
+iframe {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: end;
+    margin-right: 10px;
+  }
+  nav ul a {
+    font-size: 1.3rem;
+  }
+  .TituloBanner {
+    font-size: 3.5rem;
+  }
+  .TextoBanner {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  .SectionPresentacion {
+    flex-direction: column-reverse;
+  }
+  .SectionPresentacion .ImgPresentacion {
+    width: 100%;
+  }
+  footer h3 {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  .LogoInstagram {
+    width: 20%;
+  }
+  .LogoFacebook {
+    width: 11%;
+  }
+  /* productos */
+  .TituloProductos {
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+  }
+  .ContenedorGrid {
+    grid-template-areas: "LibroSensorial" "texto1" "CuboSensorial" "texto2" "AlfombraSensorial" "texto3";
+    grid-template-columns: 95%;
+    grid-template-rows: 250px;
+  }
+  .TextoProductos p {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+  }
+  /* Sobre Nosotros */
+  .SectionSN {
+    margin-right: 10px;
+  }
+  /* Contacto */
+  .mensaje {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0px;
+  }
+  form {
+    padding-top: 10px;
+    max-width: 300px;
+  }
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+  /* Experiencias */
+  .card-img-top-left,
+  .card-img-top-right,
+  .card-img-bottom-left,
+  .card-img-bottom-right {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -5,14 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avrino</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
 
   <header>
          
-    <img src="../imagenes/Logo.jpg" alt="LogoAvrino">
+    <img data-aos="zoom-in-down"src="../imagenes/Logo.jpg" alt="LogoAvrino">
     
     <nav>
       <ul>
@@ -59,13 +62,18 @@
     <div>
       <h3>Seguinos en nuestras redes</h3>
       <a href="https://www.instagram.com/">
-        <img src="../imagenes/InstagramLogo.png" class="LogoInstagram" alt="Logo Istagram">
+        <img data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"src="../imagenes/InstagramLogo.png" class="LogoInstagram" alt="Logo Istagram">
       </a>
 
       <a href="https://www.facebook.com/">
-        <img src="../imagenes/FacebookLogo.png" class="LogoFacebook" alt="Logo Facebook">
+        <img data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"src="../imagenes/FacebookLogo.png" class="LogoFacebook" alt="Logo Facebook">
       </a>
     </div>
   </footer>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
